@@ -19,6 +19,10 @@ nav {
     -webkit-box-shadow: none;
 }
 
+.material-icons {
+    color: var(--fontcolor);
+}
+
 .nav-wrapper ul li a {
     color: var(--fontcolor);
     font-size: 20px;
@@ -105,7 +109,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin: 7px;
-    height: 320px;
+    height: 355px;
 }
 
 .skill-icon {
@@ -115,6 +119,7 @@ h3 {
 
 .videos {
     background-color: white;
+    margin-bottom: 0px;
 }
 
 .thumbnail {
@@ -146,7 +151,7 @@ h4 {
 
 .quote {
     height: 400px;
-    background: linear-gradient(90deg,#ffe5f1, #f6dada);
+    background: linear-gradient(90deg, #ffe5f1, #f6dada);
 }
 
 h5 {
@@ -155,18 +160,23 @@ h5 {
     line-height: 1.5em;
     margin: 20px;
 }
+
 h6 {
     text-align: center;
 }
+
 .quote-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
+
 .quote-image {
     width: 100%;
+    max-width: 200px;
 }
+
 @media only screen and (min-width: 601px) {
     .contact-button {
         margin-top: -120px;
@@ -174,28 +184,34 @@ h6 {
         width: 300px;
         height: 100px;
     }
+
     h2 {
         font-size: 16px;
     }
+
     h3 {
         bottom: 50px;
     }
+
     .skills-card {
         margin: 10px;
         height: 350px;
     }
 }
 
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 993px) {
     .logo {
         margin-left: 100px;
     }
+
     .header-title {
         margin-top: 60px;
     }
+
     .contact-button {
         width: 500px;
     }
+
     h2 {
         padding-left: 150px;
         padding-right: 150px;
