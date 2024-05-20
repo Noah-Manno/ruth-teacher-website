@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruth Kowalski</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/lib/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
+    <!-- HEADER WITH BACKGROUND -->
+    <header id="home">
+        <!-- NAVBAR -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#home" class="brand-logo"><img class="logo" src="./assets/images/ruthklogo.png" alt="Logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+
+        <div class="row header-container">
+            <div class="col s12 m7 l8 header-title">
+                <h1 class="main-title">Ruth Kowalski</h1>
+                <h2 class="main-subtitle">Creative Elementary Music Teacher Dedicated to Creativity and Engaging
+                    Pedagogy</h2>
+            </div>
+            <div class="col s6 offset-s6 m5 offset-m0 l4 offset-l0 header-photo-container">
+                <img class="header-photo" src="./assets/images/ruthmainbitmoji.png" alt="Bitmoji of Ruth Kowalski">
+            </div>
+        </div>
+
+        <div class="contact-button">
+            <h3>Contact Me</h3>
+        </div>
+
+    </header>
 
 
-    
+
     <script src="./assets/js/lib/jquery-3.7.1.slim.min.js"></script>
     <script src="./assets/js/lib/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
