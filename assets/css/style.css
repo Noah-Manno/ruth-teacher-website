@@ -3,6 +3,10 @@
     --fontcolor: #8f5bbd;
 }
 
+body {
+    background-color: #f8fbfd;
+}
+
 .logo {
     width: 100px;
 }
@@ -62,6 +66,13 @@ header {
     width: 200px;
     height: 80px;
     background-color: var(--fontcolor);
+    box-shadow: 0px 0px 5px;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+    background-color: pink;
+    box-shadow: 0px 0px 10px;
 }
 
 h3 {
@@ -71,6 +82,51 @@ h3 {
     text-align: center;
     color: white;
     font-weight: 800;
+}
+
+.skills-section {
+    margin-top: 80px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-content p {
+    font-size: 12px;
+}
+
+.card-title {
+    font-size: 22px !important;
+}
+
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    height: 350px;
+}
+
+.skills-card:hover {
+    animation: bounce .5s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    } 50% {
+        transform: translateY(-10px);
+    } 100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+.skill-icon {
+    width: 110px;
+    margin-top: 50px;
 }
 
 @media only screen and (min-width: 601px) {
